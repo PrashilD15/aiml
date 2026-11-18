@@ -16,7 +16,7 @@
 # 📘 PART 1: COMPLETE ENGLISH GUIDE
 
 ## 1. System Overview & Dual Compatibility
-This repository contains complete implementations of **AIML Laboratory Practicals (2 to 9)**.
+This repository contains complete implementations of **AIML Laboratory Practicals (1 to 9)**.
 
 The codebase is built Linux-first and includes automatic path detection:
 - **College Lab PCs (Linux / Ubuntu):** Automatically reads datasets from `/home/avcoe/` where laboratory datasets reside.
@@ -47,6 +47,9 @@ python3 -m pip install pandas scikit-learn matplotlib seaborn numpy scipy
 Execute scripts using Linux `python3`:
 
 ```bash
+# Practical 1: Model-Based Reflex Agent (Smart Home HVAC System)
+python3 Practical_01_Smart_Home_Agent.py
+
 # Practical 2: Route Planning using BFS & DFS
 python3 Practical_02_Route_Planning_BFS_and_DFS.py
 
@@ -78,6 +81,7 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
 
 | Practical | Actual Script Name | Dataset | Core Algorithm / Technique |
 | :---: | :--- | :---: | :--- |
+| **01** | [`Practical_01_Smart_Home_Agent.py`](Practical_01_Smart_Home_Agent.py) | Real-time Sensor Inputs | Model-Based Reflex Agent (Internal State Tracking) |
 | **02** | [`Practical_02_Route_Planning_BFS_and_DFS.py`](Practical_02_Route_Planning_BFS_and_DFS.py) | Built-in Graph | Breadth-First Search & Depth-First Search |
 | **03** | [`Practical_03_Rule_Based_Expert_System.py`](Practical_03_Rule_Based_Expert_System.py) | Medical Rules | Forward Chaining & Backward Chaining |
 | **04** | [`Practical_04_Data_Preprocessing_and_EDA.py`](Practical_04_Data_Preprocessing_and_EDA.py) | `heart.csv` | Missing value imputation, Outlier detection, Train-Test split |
@@ -90,6 +94,18 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
 ---
 
 ## 4. Comprehensive Oral / Viva Voce Questions & Answers (English)
+
+### 🔹 Practical 1: Model-Based Reflex Agent (Smart Home HVAC System)
+- **Q1: What type of agent architecture is implemented in Practical 1?**
+  - **Answer:** A **Model-Based Reflex Agent**. Unlike a simple reflex agent, it maintains an **internal state** (history of recent temperature readings) to understand how the environment changes over time.
+- **Q2: What is the PEAS description for this Smart Home Agent?**
+  - **Answer:**
+    - **Performance Measure:** Comfort (maintaining target temperature) and energy savings (turning off devices when no motion is detected).
+    - **Environment:** Room / indoor home environment.
+    - **Actuators:** AC (Cooling), Heater (Heating), and Fan.
+    - **Sensors:** Thermometer (temperature sensor) and PIR motion detector.
+- **Q3: What is the difference between a Simple Reflex Agent and a Model-Based Reflex Agent?**
+  - **Answer:** A Simple Reflex Agent acts solely on the current percept (condition-action rules) without memory. A Model-Based Reflex Agent maintains internal state memory to handle partially observable environments and monitor trends.
 
 ### 🔹 Practical 2: Route Planning using BFS and DFS
 - **Q1: What is the fundamental difference between BFS and DFS?**
@@ -162,7 +178,7 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
 # 📙 भाग २: संपूर्ण मराठी मार्गदर्शिका
 
 ## १. प्रणाली परिचय आणि लिनक्स सुसंगतता
-या रिपॉझिटरीमध्ये **AIML लॅब प्रॅक्टिकल्स (२ ते ९)** चे संपूर्ण आणि अचूक पायथन कोड दिलेले आहेत.
+या रिपॉझिटरीमध्ये **AIML लॅब प्रॅक्टिकल्स (१ ते ९)** चे संपूर्ण आणि अचूक पायथन कोड दिलेले आहेत.
 
 हा कोड **लिनक्स आणि कॉलेज कॉम्प्युटरसाठी** विशेष अनुकूल केला आहे:
 - **कॉलेज लॅब लिनक्स पीसी (Ubuntu/Debian):** कॉलेज लॅबमधील संगणकावर डेटासेट्स आधीपासूनच `/home/avcoe/` मध्ये असतात. हा कोड कोणत्याही बदलांशिवाय थेट तिथे चालतो.
@@ -193,6 +209,9 @@ python3 -m pip install pandas scikit-learn matplotlib seaborn numpy scipy
 लिनक्स टर्मिनलमध्ये `python3` वापरून खालीलप्रमाणे प्रॅक्टिकल्स चालवा:
 
 ```bash
+# प्रॅक्टिकल १: मॉडेल-बेस्ड स्मार्ट होम एजंट
+python3 Practical_01_Smart_Home_Agent.py
+
 # प्रॅक्टिकल २: रूट प्लॅनिंग (BFS आणि DFS)
 python3 Practical_02_Route_Planning_BFS_and_DFS.py
 
@@ -224,18 +243,31 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
 
 | प्रॅक्टिकल | फाईलचे प्रत्यक्ष पूर्ण नाव | डेटासेट | वापरलेला अल्गोरिदम / तंत्रज्ञान |
 | :---: | :--- | :---: | :--- |
+| **०१** | [`Practical_01_Smart_Home_Agent.py`](Practical_01_Smart_Home_Agent.py) | सेन्सर्स इनपुट | मॉडेल-बेस्ड रिफ्लेक्स एजंट (Model-Based Reflex Agent) |
 | **०२** | [`Practical_02_Route_Planning_BFS_and_DFS.py`](Practical_02_Route_Planning_BFS_and_DFS.py) | आलेखाचा डेटा | Breadth-First Search (BFS) व Depth-First Search (DFS) |
 | **०३** | [`Practical_03_Rule_Based_Expert_System.py`](Practical_03_Rule_Based_Expert_System.py) | वैद्यकीय नियम | फॉरवर्ड चेनिंग (Forward) व बॅकवर्ड चेनिंग (Backward) |
 | **०४** | [`Practical_04_Data_Preprocessing_and_EDA.py`](Practical_04_Data_Preprocessing_and_EDA.py) | `heart.csv` | डेटा क्लीनिंग, मिसिंग व्हॅल्यू भरणे व ८०:२० ट्रेन-टेस्ट स्प्लिट |
 | **०५** | [`Practical_05_Classification_Logistic_and_KNN.py`](Practical_05_Classification_Logistic_and_KNN.py) | `Admission_Predict.csv` | लॉजिस्टीक रिग्रेशन (Logistic) व के-निअरेस्ट नेबर्स (KNN) |
 | **०६** | [`Practical_06_Regression_Linear_and_Polynomial.py`](Practical_06_Regression_Linear_and_Polynomial.py) | `Housing.csv` | लिनिअर रिग्रेशन विरुद्ध पॉलिइनॉमिअल रिग्रेशन (डिग्री २) |
 | **०७** | [`Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py`](Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py) | `Mall_Customers.csv` | के-मीन्स (एल्बो पद्धत) व हायराक्रिकल क्लस्टरिंग (डेंड्रोग्राम) |
-| **०८** | [`Practical_08_Dimensionality_Reduction_PCA_and_SVM.py`](Practical_08_Dimensionality_Reduction_PCA_and_SVM.py) | `wdbc.csv` | प्रिन्सिपल कॉम्पोनंट ॲनालिसिस (PCA) व सपोर्ट व्हेक्टर मशीन (SVM) |
+| **०८** | [`Practical_08_PCA_Dimensionality_Reduction.py`](Practical_08_PCA_Dimensionality_Reduction.py) | `wdbc.csv` | प्रिन्सिपल कॉम्पोनंट ॲनालिसिस (PCA) व सपोर्ट व्हेक्टर मशीन (SVM) |
 | **०९** | [`Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py`](Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py) | `breast_cancer.csv` | रँडम फॉरेस्ट, ॲडाबूस्ट व SVM यांचे GridSearchCV द्वारे ट्युनिंग |
 
 ---
 
 ## ४. तोंडी परीक्षा (Oral / Viva Voce) प्रश्न आणि उत्तरे (मराठी)
+
+### 🔹 प्रॅक्टिकल १: मॉडेल-बेस्ड स्मार्ट होम एजंट
+- **प्रश्न १: प्रॅक्टिकल १ मध्ये कोणत्या प्रकारचा AI एजंट वापरला आहे?**
+  - **उत्तर:** **मॉडेल-बेस्ड रिफ्लेक्स एजंट (Model-Based Reflex Agent)**. हा एजंट फक्त सध्याच्या परिस्थितीवर अवलंबून न राहता मागील तापमानाचा इतिहास (Internal State/Memory) लक्षात ठेवतो.
+- **प्रश्न २: या एजंटचे PEAS (Performance, Environment, Actuators, Sensors) काय आहे?**
+  - **उत्तर:**
+    - **Performance:** खोलीचे तापमान योग्य राखणे आणि वीज बचत करणे.
+    - **Environment:** खोली / घर.
+    - **Actuators:** AC (थंडावा), हीटर (उबदारपणा) आणि फॅन.
+    - **Sensors:** तापमान सेन्सर (थर्मोमीटर) आणि मोशन सेन्सर (PIR).
+- **प्रश्न ३: सिम्पल रिफ्लेक्स आणि मॉडेल-बेस्ड रिफ्लेक्स एजंटमधील फरक काय?**
+  - **उत्तर:** सिम्पल रिफ्लेक्स एजंटला भूतकाळाची आठवण नसते (फक्त IF-THEN नियम); मॉडेल-बेस्ड एजंट अंतर्गत मेमरी (Internal State) ठेवून निर्णय घेतो.
 
 ### 🔹 प्रॅक्टिकल २: BFS आणि DFS रूट प्लॅनिंग
 - **प्रश्न १: BFS आणि DFS मधील मुख्य फरक काय आहे?**
@@ -307,6 +339,7 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
 ```
 aiml/
 │
+├── Practical_01_Smart_Home_Agent.py
 ├── Practical_02_Route_Planning_BFS_and_DFS.py
 ├── Practical_03_Rule_Based_Expert_System.py
 ├── Practical_04_Data_Preprocessing_and_EDA.py
