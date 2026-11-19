@@ -10,6 +10,7 @@
 > **Quick Jump / थेट नेव्हिगेशन:**
 > - [📘 Part 1: Complete English Guide (Linux Terminal Commands & Viva Q&A)](#-part-1-complete-english-guide)
 > - [📙 भाग २: संपूर्ण मराठी मार्गदर्शिका (लिनक्स कमांड्स व व्हायव्हा प्रश्नोत्तरे)](#-भाग-२-संपूर्ण-मराठी-मार्गदर्शिका)
+> - [📚 Chunk-by-Chunk Code Explanations Folder (`explanations/`)](explanations/)
 
 ---
 
@@ -79,17 +80,17 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
 
 ## 3. Practicals Index & Implementation Details
 
-| Practical | Actual Script Name | Dataset | Core Algorithm / Technique |
-| :---: | :--- | :---: | :--- |
-| **01** | [`Practical_01_Smart_Home_Agent.py`](Practical_01_Smart_Home_Agent.py) | Real-time Sensor Inputs | Model-Based Reflex Agent (Internal State Tracking) |
-| **02** | [`Practical_02_Route_Planning_BFS_and_DFS.py`](Practical_02_Route_Planning_BFS_and_DFS.py) | Built-in Graph | Breadth-First Search & Depth-First Search |
-| **03** | [`Practical_03_Rule_Based_Expert_System.py`](Practical_03_Rule_Based_Expert_System.py) | Medical Rules | Forward Chaining & Backward Chaining |
-| **04** | [`Practical_04_Data_Preprocessing_and_EDA.py`](Practical_04_Data_Preprocessing_and_EDA.py) | `heart.csv` | Missing value imputation, Outlier detection, Train-Test split |
-| **05** | [`Practical_05_Classification_Logistic_and_KNN.py`](Practical_05_Classification_Logistic_and_KNN.py) | `Admission_Predict.csv` | Logistic Regression & K-Nearest Neighbors (KNN) |
-| **06** | [`Practical_06_Regression_Linear_and_Polynomial.py`](Practical_06_Regression_Linear_and_Polynomial.py) | `Housing.csv` | Linear Regression vs Polynomial Regression ($Degree=2$) |
-| **07** | [`Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py`](Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py) | `Mall_Customers.csv` | K-Means (Elbow Method) & Agglomerative Hierarchical (Dendrogram) |
-| **08** | [`Practical_08_Dimensionality_Reduction_PCA_and_SVM.py`](Practical_08_Dimensionality_Reduction_PCA_and_SVM.py) | `wdbc.csv` | Principal Component Analysis (PCA) & Support Vector Machine (SVM) |
-| **09** | [`Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py`](Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py) | `breast_cancer.csv` | Random Forest, AdaBoost, SVM with GridSearchCV (5-Fold CV) |
+| Practical | Actual Script Name | Dataset | Core Algorithm / Technique | 📖 Chunk Explanation & Viva Guide |
+| :---: | :--- | :---: | :--- | :--- |
+| **01** | [`Practical_01_Smart_Home_Agent.py`](Practical_01_Smart_Home_Agent.py) | Sensor Inputs | Model-Based Reflex Agent | [📘 Read Explanation](explanations/Practical_01_Explanation.md) |
+| **02** | [`Practical_02_Route_Planning_BFS_and_DFS.py`](Practical_02_Route_Planning_BFS_and_DFS.py) | Built-in Graph | Breadth-First & Depth-First Search | [📘 Read Explanation](explanations/Practical_02_Explanation.md) |
+| **03** | [`Practical_03_Rule_Based_Expert_System.py`](Practical_03_Rule_Based_Expert_System.py) | Medical Rules | Forward & Backward Chaining | [📘 Read Explanation](explanations/Practical_03_Explanation.md) |
+| **04** | [`Practical_04_Data_Preprocessing_and_EDA.py`](Practical_04_Data_Preprocessing_and_EDA.py) | `heart.csv` | Missing value, Outlier, Split | [📘 Read Explanation](explanations/Practical_04_Explanation.md) |
+| **05** | [`Practical_05_Classification_Logistic_and_KNN.py`](Practical_05_Classification_Logistic_and_KNN.py) | `Admission_Predict.csv` | Logistic Regression & KNN | [📘 Read Explanation](explanations/Practical_05_Explanation.md) |
+| **06** | [`Practical_06_Regression_Linear_and_Polynomial.py`](Practical_06_Regression_Linear_and_Polynomial.py) | `Housing.csv` | Linear vs Polynomial ($Degree=2$) | [📘 Read Explanation](explanations/Practical_06_Explanation.md) |
+| **07** | [`Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py`](Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py) | `Mall_Customers.csv` | K-Means (Elbow) & Dendrogram | [📘 Read Explanation](explanations/Practical_07_Explanation.md) |
+| **08** | [`Practical_08_Dimensionality_Reduction_PCA_and_SVM.py`](Practical_08_Dimensionality_Reduction_PCA_and_SVM.py) | `wdbc.csv` | PCA & Support Vector Machine | [📘 Read Explanation](explanations/Practical_08_Explanation.md) |
+| **09** | [`Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py`](Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py) | `breast_cancer.csv` | Random Forest, AdaBoost & GridSearch | [📘 Read Explanation](explanations/Practical_09_Explanation.md) |
 
 ---
 
@@ -103,7 +104,7 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
     - **Performance Measure:** Comfort (maintaining target temperature) and energy savings (turning off devices when no motion is detected).
     - **Environment:** Room / indoor home environment.
     - **Actuators:** AC (Cooling), Heater (Heating), and Fan.
-    - **Sensors:** Thermometer (temperature sensor) and PIR motion detector.
+    - **Sensors:** Thermometer (temperature sensor) and PIR Motion Detector.
 - **Q3: What is the difference between a Simple Reflex Agent and a Model-Based Reflex Agent?**
   - **Answer:** A Simple Reflex Agent acts solely on the current percept (condition-action rules) without memory. A Model-Based Reflex Agent maintains internal state memory to handle partially observable environments and monitor trends.
 
@@ -241,17 +242,17 @@ python3 Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
 
 ## ३. सर्व प्रॅक्टिकल्सची सविस्तर माहिती
 
-| प्रॅक्टिकल | फाईलचे प्रत्यक्ष पूर्ण नाव | डेटासेट | वापरलेला अल्गोरिदम / तंत्रज्ञान |
-| :---: | :--- | :---: | :--- |
-| **०१** | [`Practical_01_Smart_Home_Agent.py`](Practical_01_Smart_Home_Agent.py) | सेन्सर्स इनपुट | मॉडेल-बेस्ड रिफ्लेक्स एजंट (Model-Based Reflex Agent) |
-| **०२** | [`Practical_02_Route_Planning_BFS_and_DFS.py`](Practical_02_Route_Planning_BFS_and_DFS.py) | आलेखाचा डेटा | Breadth-First Search (BFS) व Depth-First Search (DFS) |
-| **०३** | [`Practical_03_Rule_Based_Expert_System.py`](Practical_03_Rule_Based_Expert_System.py) | वैद्यकीय नियम | फॉरवर्ड चेनिंग (Forward) व बॅकवर्ड चेनिंग (Backward) |
-| **०४** | [`Practical_04_Data_Preprocessing_and_EDA.py`](Practical_04_Data_Preprocessing_and_EDA.py) | `heart.csv` | डेटा क्लीनिंग, मिसिंग व्हॅल्यू भरणे व ८०:२० ट्रेन-टेस्ट स्प्लिट |
-| **०५** | [`Practical_05_Classification_Logistic_and_KNN.py`](Practical_05_Classification_Logistic_and_KNN.py) | `Admission_Predict.csv` | लॉजिस्टीक रिग्रेशन (Logistic) व के-निअरेस्ट नेबर्स (KNN) |
-| **०६** | [`Practical_06_Regression_Linear_and_Polynomial.py`](Practical_06_Regression_Linear_and_Polynomial.py) | `Housing.csv` | लिनिअर रिग्रेशन विरुद्ध पॉलिइनॉमिअल रिग्रेशन (डिग्री २) |
-| **०७** | [`Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py`](Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py) | `Mall_Customers.csv` | के-मीन्स (एल्बो पद्धत) व हायराक्रिकल क्लस्टरिंग (डेंड्रोग्राम) |
-| **०८** | [`Practical_08_PCA_Dimensionality_Reduction.py`](Practical_08_PCA_Dimensionality_Reduction.py) | `wdbc.csv` | प्रिन्सिपल कॉम्पोनंट ॲनालिसिस (PCA) व सपोर्ट व्हेक्टर मशीन (SVM) |
-| **०९** | [`Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py`](Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py) | `breast_cancer.csv` | रँडम फॉरेस्ट, ॲडाबूस्ट व SVM यांचे GridSearchCV द्वारे ट्युनिंग |
+| प्रॅक्टिकल | फाईलचे प्रत्यक्ष पूर्ण नाव | डेटासेट | वापरलेला अल्गोरिदम / तंत्रज्ञान | 📖 सविस्तर स्पष्टीकरण लिंक |
+| :---: | :--- | :---: | :--- | :--- |
+| **०१** | [`Practical_01_Smart_Home_Agent.py`](Practical_01_Smart_Home_Agent.py) | सेन्सर्स इनपुट | मॉडेल-बेस्ड रिफ्लेक्स एजंट | [📘 स्पष्टीकरण वाचा](explanations/Practical_01_Explanation.md) |
+| **०२** | [`Practical_02_Route_Planning_BFS_and_DFS.py`](Practical_02_Route_Planning_BFS_and_DFS.py) | आलेखाचा डेटा | Breadth-First व Depth-First Search | [📘 स्पष्टीकरण वाचा](explanations/Practical_02_Explanation.md) |
+| **०३** | [`Practical_03_Rule_Based_Expert_System.py`](Practical_03_Rule_Based_Expert_System.py) | वैद्यकीय नियम | फॉरवर्ड व बॅकवर्ड चेनिंग | [📘 स्पष्टीकरण वाचा](explanations/Practical_03_Explanation.md) |
+| **०४** | [`Practical_04_Data_Preprocessing_and_EDA.py`](Practical_04_Data_Preprocessing_and_EDA.py) | `heart.csv` | डेटा क्लीनिंग, मिसिंग व्हॅल्यू भरणे | [📘 स्पष्टीकरण वाचा](explanations/Practical_04_Explanation.md) |
+| **०५** | [`Practical_05_Classification_Logistic_and_KNN.py`](Practical_05_Classification_Logistic_and_KNN.py) | `Admission_Predict.csv` | लॉजिस्टीक रिग्रेशन व KNN | [📘 स्पष्टीकरण वाचा](explanations/Practical_05_Explanation.md) |
+| **०६** | [`Practical_06_Regression_Linear_and_Polynomial.py`](Practical_06_Regression_Linear_and_Polynomial.py) | `Housing.csv` | लिनिअर विरुद्ध पॉलिइनॉमिअल (Degree 2) | [📘 स्पष्टीकरण वाचा](explanations/Practical_06_Explanation.md) |
+| **०७** | [`Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py`](Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py) | `Mall_Customers.csv` | के-मीन्स (एल्बो पद्धत) व डेंड्रोग्राम | [📘 स्पष्टीकरण वाचा](explanations/Practical_07_Explanation.md) |
+| **०८** | [`Practical_08_Dimensionality_Reduction_PCA_and_SVM.py`](Practical_08_Dimensionality_Reduction_PCA_and_SVM.py) | `wdbc.csv` | PCA व सपोर्ट व्हेक्टर मशीन | [📘 स्पष्टीकरण वाचा](explanations/Practical_08_Explanation.md) |
+| **०९** | [`Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py`](Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py) | `breast_cancer.csv` | रँडम फॉरेस्ट, ॲडाबूस्ट व GridSearch | [📘 स्पष्टीकरण वाचा](explanations/Practical_09_Explanation.md) |
 
 ---
 
@@ -348,6 +349,18 @@ aiml/
 ├── Practical_07_Customer_Segmentation_KMeans_and_Hierarchical.py
 ├── Practical_08_Dimensionality_Reduction_PCA_and_SVM.py
 ├── Practical_09_Ensemble_Learning_and_Hyperparameter_Tuning.py
+│
+├── explanations/                                   # प्रॅक्टिकलनुसार कोडचे तुकडे व स्पष्टीकरण
+│   ├── README.md
+│   ├── Practical_01_Explanation.md
+│   ├── Practical_02_Explanation.md
+│   ├── Practical_03_Explanation.md
+│   ├── Practical_04_Explanation.md
+│   ├── Practical_05_Explanation.md
+│   ├── Practical_06_Explanation.md
+│   ├── Practical_07_Explanation.md
+│   ├── Practical_08_Explanation.md
+│   └── Practical_09_Explanation.md
 │
 ├── datasets/                                       # लॅपटॉपसाठी डेटासेट्स
 │   ├── heart.csv
